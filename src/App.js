@@ -1,8 +1,9 @@
-import React from 'react'
+/* eslint-disable react/button-has-type */
+import React from 'react';
 import './index.css';
 
 export default function App() {
-  const [count, setCount] = React.useState(0)
+  const [count, setCount] = React.useState(0);
   /**
      * Note: if you ever need the old value of state
      * to help you determine the new value of state,
@@ -14,10 +15,10 @@ export default function App() {
      * value of state.
      */
   function add() {
-    setCount(prevCount => prevCount + 1) 
+    setCount((prevCount) => prevCount + 1);
   }
   function minus() {
-    setCount(prevCount => prevCount - 1)
+    setCount((prevCount) => prevCount - 1);
   }
   return (
     <div className="counter">
@@ -27,5 +28,5 @@ export default function App() {
       </div>
       <button className="counter--plus" onClick={add}>+</button>
     </div>
-  )
+  );
 }
