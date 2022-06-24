@@ -1,5 +1,6 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
+import Count from './Count';
 import './index.css';
 
 export default function App() {
@@ -23,9 +24,7 @@ export default function App() {
   return (
     <div className="counter">
       <button className="counter--minus" onClick={minus}>-</button>
-      <div className="counter--count">
-        <h1>{count}</h1>
-      </div>
+      <Count number={count} />
       <button className="counter--plus" onClick={add}>+</button>
     </div>
   );
